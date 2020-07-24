@@ -35,18 +35,18 @@
 
   </div>
   <script>
-    deg = 0
+    deg = 0;
     s = true;
 
     function m() {
-        var el = document.getElementById("collapse")
-        el.style.transform = "rotateX(-" + deg + "deg) rotateY(-" + deg * 2 + "deg)"
-        el.style.webkitTransform = "rotateX(-" + deg + "deg) rotateY(-" + deg * 2 + "deg)"
+        var el = document.getElementById("collapse");
+        el.style.transform = "rotateX(-" + deg + "deg) rotateY(-" + deg * 2 + "deg)";
+        el.style.webkitTransform = "rotateX(-" + deg + "deg) rotateY(-" + deg * 2 + "deg)";
         deg += .5;
         if (deg % 180 == 0) {
             if (s) {
-                el.style.backgroundColor = "black"
-                document.body.style.backgroundColor = "white"
+                el.style.backgroundColor = "black";
+                document.body.style.backgroundColor = "white";
             } else {
                 el.style.backgroundColor = "white";
                 document.body.style.backgroundColor = "black";
