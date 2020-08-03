@@ -35,13 +35,14 @@
 
   </div>
   <script>
-    deg = 0;
-    s = true;
+    var el = document.getElementById("collapse");
+    var deg = 0;
+    var s = true;
 
     function m() {
-        var el = document.getElementById("collapse");
-        el.style.transform = "rotateX(-" + deg + "deg) rotateY(-" + deg * 2 + "deg)";
-        el.style.webkitTransform = "rotateX(-" + deg + "deg) rotateY(-" + deg * 2 + "deg)";
+        var t = "rotateX(-" + deg + "deg) rotateY(-" + deg * 2 + "deg)";
+        el.style.transform = t;
+        el.style.webkitTransform = t;
         deg += .5;
         if (deg % 180 == 0) {
             if (s) {
