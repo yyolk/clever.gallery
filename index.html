@@ -35,11 +35,11 @@
 
   </div>
   <script>
-    var el = document.getElementById("collapse");
     var deg = 0;
     var s = true;
 
     function m() {
+        var el = document.getElementById("collapse");
         var t = "rotateX(-" + deg + "deg) rotateY(-" + deg * 2 + "deg)";
         el.style.transform = t;
         el.style.webkitTransform = t;
@@ -53,7 +53,6 @@
                 document.body.style.backgroundColor = "black";
             }
             s = !s;
-
         }
         setTimeout(m, 50);
     }
